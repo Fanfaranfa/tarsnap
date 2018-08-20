@@ -11,6 +11,9 @@
   number of uncompressed bytes processed, in addition to the previous output.
 - tarsnap now accepts a --passphrase-stdin option which reads the passphrase
   from stdin instead of /dev/tty.
+- tarsnap now accepts --progress-bytes SIZE, which prints a progress message
+  after each SIZE bytes are processed.  This can be disabled with
+  --no-progress-bytes.
 
 
 Tarsnap Releases
