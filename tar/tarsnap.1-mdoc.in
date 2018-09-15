@@ -670,6 +670,10 @@ and
 but it is likely that other
 warnings will be silenced by this option in future versions of
 .Nm .
+.It Fl -resume-extract
+(x mode only)
+Don't extract files whose filesize and mtime matches existing files on the
+disk.  Primarily used to resume an archive extraction which was interrupted.
 .It Fl -retry-forever
 This option causes tarsnap to continue trying to reconnect to the
 tarsnap server forever, instead of giving up after 5-10 minutes.

@@ -748,6 +748,11 @@ but it is likely that other
 warnings will be silenced by this option in future versions of
 \fB\%tarsnap\fP.
 .TP
+\fB\--resume-extract\fP
+(x mode only)
+Don't extract files whose filesize and mtime matches existing files on the
+disk.  Primarily used to resume an archive extraction which was interrupted.
+.TP
 \fB\--retry-forever\fP
 This option causes tarsnap to continue trying to reconnect to the
 tarsnap server forever, instead of giving up after 5-10 minutes.
