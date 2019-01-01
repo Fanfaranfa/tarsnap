@@ -674,6 +674,12 @@ warnings will be silenced by this option in future versions of
 (x mode only)
 Don't extract files whose filesize and mtime matches existing files on the
 disk.  Primarily used to resume an archive extraction which was interrupted.
+This differs from
+.Fl k
+in that
+.Fl -resume-extract
+will overwrite a file if the size or modification time do not match, as can
+happen if tarsnap is killed partway through extracting a file.
 .It Fl -retry-forever
 This option causes tarsnap to continue trying to reconnect to the
 tarsnap server forever, instead of giving up after 5-10 minutes.
